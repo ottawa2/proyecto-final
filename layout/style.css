@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 350px 1fr;
+}
+
+aside {
+    background-color: blueviolet;
+    grid-area: aside;
+}
+
+main {
+    background-color: blue;
+    grid-area: main;
+    padding: 200px;
+    overflow-y: auto;
+}
+
+section {
+    background-color: yellowgreen;
+    grid-area: navbar;
+}
+footer {
+    background-color: yellow;
+    grid-area: footer;
+    padding: 20px;
+}
+
+section img {
+    padding: 20px;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}

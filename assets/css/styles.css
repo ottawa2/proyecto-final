@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    
+}
+
+main {
+    /* background-color: blue; */
+    grid-area: main;
+    padding: 200px;
+    overflow-y: auto;
+}
+
+header {
+    /* background-color: blueviolet; */
+    grid-area: header;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    width: 450px;
+}
+
+#paginacion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px
+}
+
+#paginacion h2 {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+
+h1{
+    font-size: 32px;
+}
